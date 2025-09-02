@@ -1,7 +1,3 @@
-💻 Laptop Price Predictor
-
-A machine learning project to predict laptop prices based on specifications such as brand, RAM, storage, CPU, GPU, operating system, and more.
-
 # 💻 **Laptop Price Predictor**
 
 A machine learning project that predicts laptop prices based on their specifications using various regression models and an interactive Streamlit web app.
@@ -76,6 +72,7 @@ We trained and evaluated multiple machine learning models on the **Laptop Specif
 Input: Brand = Dell, RAM = 16GB, CPU = Intel i7, Storage = 512GB SSD
 
 Output: ₹85,000 (approx.)
+
 
 
 
