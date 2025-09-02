@@ -17,30 +17,27 @@ laptop-price-predictor/
 │── .gitignore                  # Ignored files
 ```
 
-⚙️ Installation
 
-Clone the repository and install dependencies:
+## ⚡ Installation & Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sharruk/sentiment-analysis.git
+   cd sentiment-analysis
+
+
+2. Create a virtual environment and install dependencies:
+
 ```bash
-git clone https://github.com/Sharruk/laptop-price-predictor.git
-cd laptop-price-predictor
+python3 -m venv venv
+source venv/bin/activate    # On Linux/Mac
+venv\Scripts\activate       # On Windows
 pip install -r requirements.txt
 ```
-
-📊 Usage
-1. Run the Jupyter Notebook
-
-For training and testing models:
-
-jupyter notebook notebooks/laptop_price_predictor.ipynb
-
-2. Run the Web App
-
-To launch the Streamlit app:
-
+3. Run the Streamlit app:
+```bash
 streamlit run app.py
-
-
-Then open your browser at http://localhost:8501/.
+```
 
 🧠 Model
 
@@ -55,3 +52,4 @@ Best performing model saved and used in app.py
 Input: Brand = Dell, RAM = 16GB, CPU = Intel i7, Storage = 512GB SSD
 
 Output: ₹85,000 (approx.)
+
