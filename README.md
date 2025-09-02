@@ -69,7 +69,7 @@ MAE:  12107.70
 RMSE: 19222.48
 R2:   0.74
 
-📥 Sample Input & Output
+### 📥 Sample Input & Output
 
 When you run the Streamlit app, you can enter laptop specifications like:
 
@@ -87,35 +87,21 @@ Predicted Output:
 
 💰 Predicted Price: ₹82,500 (approx)
 
+## 🔹 Key Insights & Improvements  
 
-🔹 Key Insights & Improvements
+**Overall Performance:** Achieved **R² ~74%** (good baseline for price prediction).  
 
-Overall Performance: Achieved R² ~74% (good baseline for price prediction).
+### ✅ Strengths  
+- Handles both categorical and numerical features well.  
+- Predicts mid-range laptop prices with good accuracy.  
 
-Strengths:
+### ⚠️ Weaknesses  
+- Struggles with extreme laptop configurations (very high-end / budget laptops).  
+- Limited dataset size (~1300 rows) restricts generalization.  
 
-Handles both categorical and numerical features well.
-
-Predicts mid-range laptop prices with good accuracy.
-
-Weaknesses:
-
-Struggles with extreme laptop configurations (very high-end / budget laptops).
-
-Limited dataset size (~1300 rows) restricts generalization.
-
-Next Steps for Improvement:
-
-Expand the dataset with more laptop specifications.
-
-Perform advanced hyperparameter tuning (GridSearch, Optuna).
-
-Experiment with alternative models (CatBoost, LightGBM, Neural Networks).
-
-Engineer richer features (e.g., GPU/CPU benchmark scores, SSD vs HDD split, brand popularity).
-
-Optimize the pipeline for faster inference in the Streamlit app.
-
-
-
-
+### 🚀 Next Steps for Improvement  
+- Expand the dataset with more laptop specifications.  
+- Perform advanced hyperparameter tuning (**GridSearchCV, Optuna**).  
+- Experiment with alternative models (**CatBoost, LightGBM, Neural Networks**).  
+- Engineer richer features (e.g., **GPU/CPU benchmark scores, SSD vs HDD split, brand popularity**).  
+- Optimize the pipeline for faster inference in the **Streamlit app**.  
