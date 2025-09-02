@@ -64,14 +64,57 @@ We trained and evaluated multiple machine learning models on the **Laptop Specif
 | XGBoost            | 11,990.39 | 19,521.70 | 0.74 |  
 
 ✅ **Best Model: RandomForest**  
-## 📊 Model Performance  
 
-```python
-{'MAE': 12107.700871106854, 'RMSE': 19222.476313127947, 'R2': 0.7437349716327546}
-```
-Input: Brand = Dell, RAM = 16GB, CPU = Intel i7, Storage = 512GB SSD
+MAE:  12107.70
+RMSE: 19222.48
+R2:   0.74
 
-Output: ₹85,000 (approx.)
+📥 Sample Input & Output
+
+When you run the Streamlit app, you can enter laptop specifications like:
+
+Sample Input:
+
+Brand: Dell
+Processor: Intel Core i7
+RAM: 16GB
+Storage: 512GB SSD
+GPU: NVIDIA GTX 1650
+OS: Windows 11
+
+
+Predicted Output:
+
+💰 Predicted Price: ₹82,500 (approx)
+
+
+🔹 Key Insights & Improvements
+
+Overall Performance: Achieved R² ~74% (good baseline for price prediction).
+
+Strengths:
+
+Handles both categorical and numerical features well.
+
+Predicts mid-range laptop prices with good accuracy.
+
+Weaknesses:
+
+Struggles with extreme laptop configurations (very high-end / budget laptops).
+
+Limited dataset size (~1300 rows) restricts generalization.
+
+Next Steps for Improvement:
+
+Expand the dataset with more laptop specifications.
+
+Perform advanced hyperparameter tuning (GridSearch, Optuna).
+
+Experiment with alternative models (CatBoost, LightGBM, Neural Networks).
+
+Engineer richer features (e.g., GPU/CPU benchmark scores, SSD vs HDD split, brand popularity).
+
+Optimize the pipeline for faster inference in the Streamlit app.
 
 
 
