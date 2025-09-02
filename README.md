@@ -39,17 +39,37 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-🧠 Model
+## 📊 Model Performance  
 
-Preprocessing: Label encoding, scaling, feature engineering
+We trained and evaluated multiple machine learning models on the **Laptop Specifications Dataset (`laptop.csv`)**.  
 
-Algorithms tested: Linear Regression, Ridge, Random Forest, Gradient Boosting
+| Model              | MAE (↓)   | RMSE (↓)  | R² (↑)  |  
+|--------------------|-----------|-----------|---------|  
+| Linear Regression  | 13,714.50 | 19,844.93 | 0.73 |  
+| Random Forest      | 12,107.70 | 19,222.48 | 0.74 |  
+| XGBoost            | 11,990.39 | 19,521.70 | 0.74 |  
 
-Best performing model saved and used in app.py
+✅ **Best Model: RandomForest**  
+## 📊 Model Performance  
 
-📈 Example Prediction
+We trained and evaluated multiple machine learning models on the **Laptop Specifications Dataset (`laptop.csv`)**.  
+
+| Model              | MAE (↓)   | RMSE (↓)  | R² (↑)  |  
+|--------------------|-----------|-----------|---------|  
+| Linear Regression  | 13,714.50 | 19,844.93 | 0.73 |  
+| Random Forest      | 12,107.70 | 19,222.48 | 0.74 |  
+| XGBoost            | 11,990.39 | 19,521.70 | 0.74 |  
+
+✅ **Best Model: RandomForest**  
+```python
+{'MAE': 12107.700871106854, 'RMSE': 19222.476313127947, 'R2': 0.7437349716327546}
+
+```python
+{'MAE': 12107.700871106854, 'RMSE': 19222.476313127947, 'R2': 0.7437349716327546}
+
 
 Input: Brand = Dell, RAM = 16GB, CPU = Intel i7, Storage = 512GB SSD
 
 Output: ₹85,000 (approx.)
+
 
